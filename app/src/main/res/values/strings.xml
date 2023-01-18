@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">eventos-compose-salatiel</string>
+    <string name="count_name_button_1">Contador 1</string>
+    <string name="count_name_button_2">Contador 2</string>
+    <string name="increment_text">Incremento</string>
+    <string name="global_text">Global</string>
+</resources>
