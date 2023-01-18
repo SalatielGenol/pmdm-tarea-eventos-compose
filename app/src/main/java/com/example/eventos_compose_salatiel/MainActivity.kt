@@ -86,7 +86,13 @@ fun ContadorIndividual(
             Text(text = stringResource(R.string.increment_text) + ":")
             BasicTextField(
                 value = numInput,
-                onValueChange = numInputOnChange,
+                onValueChange = {
+                    if (it.length > 1) {
+                        numInputOnChange("1")
+                    }else{
+                        numInputOnChange(it)
+                    }
+                },
                 modifier = Modifier.onFocusChanged { focusState ->
                     when {
                         focusState.hasFocus -> numInputOnChange("")
