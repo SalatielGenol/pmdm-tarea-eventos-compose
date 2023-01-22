@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen(){
-    val (globalCounter, globalCounterOnChange) = rememberSaveable { mutableStateOf("0") }
+    val (globalCounter, globalCounterOnChange) = rememberSaveable { mutableStateOf(0) }
     Column(modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly) {
